@@ -1,5 +1,5 @@
 :root {
-    --green: #758C20;
+    --green: #3B8C6E;
 }
 
 * {
@@ -70,7 +70,7 @@ header {
 
 header .logo {
     font-family: 'Merienda', cursive;
-    font-size: 4rem;
+    font-size: 6rem;
     color: #BF0413;
     font-weight: bolder;
 }
@@ -128,14 +128,14 @@ header .fa-bars {
 }
 
 .home .content span {
-    font-size: 3.5rem;
-    color: green;
+    font-size: 4rem;
+    color: var(--green);
     padding: 1rem 0;
     line-height: 1.5;
 }
 
 .home .content p {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
     padding: 1rem 0;
     line-height: 1.5;
@@ -479,24 +479,31 @@ header .fa-bars {
     justify-content: center;
 }
 #myBtn {
-    display: none;
+    display: inline-block;
     position: fixed;
     bottom: 20px;
     right: 30px;
     z-index: 99;
-    font-size: 18px;
+    font-size: 14px;
     border: none;
     outline: none;
-    background-color: var(--green);
+    background-color: gainsboro;
     color: white;
-    cursor: pointer;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 50%;
   }
-  
   #myBtn:hover {
+    cursor: pointer;
     background-color: #555;
   }
+  
+  #myBtn:active {
+    background-color: #555;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
+  
 /* media queries  */
 @media (max-width:991px) {
 
@@ -529,7 +536,7 @@ header .fa-bars {
         top: 100%;
         left: 0;
         right: 0;
-        background: #eee;
+        background: greenlight;
         border-top: .1rem solid rgba(0, 0, 0, .1);
         clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     }
