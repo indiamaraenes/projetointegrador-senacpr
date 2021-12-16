@@ -463,15 +463,7 @@
     <!-- button whatsapp end -->
     <!-- button scroll to go top -->
     <button onclick="topFunction()" id="myBtn" title="Go to top">UP</button>
-    <!-- pop up -->
-    <div id="myModal" class="modal">
 
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Obrigado por se cadastrar!</p>
-        </div>
-    </div>
     <script>
         //Get the button
         var mybutton = document.getElementById("myBtn");
@@ -491,6 +483,29 @@
         function topFunction() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
+        }
+
+        function validar() {
+            nome = document.getElementById("nome").value;
+            idade = document.getElementById("idade").value;
+            email = document.getElementById("email").value;
+            mensagem = document.getElementById("mensagem").value;
+
+            if (nome == "" || nome.lenght < 3) {
+                alert("Preencha o campo nome");
+                return false;
+            } else if (idade == "")  {
+                alert("Preencha o campo idade");
+                return false;
+            } else if (email == "") {
+                alert("Preencha o campo email");
+                return false;
+            } else if (mensagem == "") {
+                alert("Preencha o campo mensagem");
+                return false;
+            } else {
+                return true;
+            }
         }
     </script>
 </body>
