@@ -16,8 +16,11 @@
         rel="stylesheet">
     <!-- css  -->
     <link rel="stylesheet" href="css/style.css">
-<!--  -->
-<script src="script.js"></script>
+    <!--  -->
+    <link rel="stylesheet"
+        href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css">
+    <script src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.js"></script>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -443,46 +446,53 @@
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14407.974712486473!2d-49.285572335119625!3d-25.4718865552294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1639482265672!5m2!1spt-BR!2sbr"
                 width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
-        <div class="credit"> Desenvolvido<span> Indiamara & Angel Gabriele</span> | Projeto Integrador Curso Programador
+        <div class="credit"> Desenvolvido por<span> Indiamara & Angel Gabriele</span> | Projeto Integrador Curso
+            Programador
             Web - Senac PR</div>
         <div class="logo-senac">
-            <img src="images/senac-logo-sem-fundo.png" width="18%" height="8%" alt="">
+            <img src="images/senac-logo-sem-fundo.png" width="10%" height="4%" alt="">
         </div>
     </section>
 
     <!-- footer section ends -->
     <!-- button whatsapp -->
-    <link rel="stylesheet"
-        href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css"> <a
-        id="robbu-whatsapp-button" class="left" target="_blank"
-        href="https://api.whatsapp.com/send?phone=55439998340549">
-        <div class="rwb-tooltip">Fale conosco</div> <img
-            src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
+    <a id="robbu-whatsapp-button" class="left" target="_blank" href="https://api.whatsapp.com/send?phone=5543998340549">
+        <div class="rwb-tooltip">Fale conosco</div>
+        <img src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg">
     </a>
     <!-- button whatsapp end -->
-    <!-- button scroll to top -->
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Up</button>
+    <!-- button scroll to go top -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">UP</button>
+    <!-- pop up -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Obrigado por se cadastrar!</p>
+        </div>
+    </div>
     <script>
         //Get the button
         var mybutton = document.getElementById("myBtn");
-        
+
         // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {scrollFunction()};
-        
+        window.onscroll = function () { scrollFunction() };
+
         function scrollFunction() {
-          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
-          } else {
-            mybutton.style.display = "none";
-          }
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
         }
-        
+
         // When the user clicks on the button, scroll to the top of the document
         function topFunction() {
-          document.body.scrollTop = 0;
-          document.documentElement.scrollTop = 0;
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
         }
-        </script>
+    </script>
 </body>
-<script src="script.js"></script>
+
 </html>
