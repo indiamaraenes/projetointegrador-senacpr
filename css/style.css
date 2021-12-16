@@ -43,7 +43,7 @@ section {
     display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
-    background: green;
+    background: var(--green);
     color: #fff;
     padding: .9rem 3.5rem;
     cursor: pointer;
@@ -51,7 +51,7 @@ section {
 }
 
 .btn:hover {
-    background: var(--green);
+    background: green;
 }
 
 header {
