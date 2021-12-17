@@ -49,7 +49,7 @@ document.querySelectorAll('.small-image-3').forEach(images =>{
     }
 });
 
-let countDate = new Date('aug 1, 2021 00:00:00').getTime();
+let countDate = new Date('aug 16, 2021 00:00:00').getTime();
 
 function countDown(){
 
@@ -77,7 +77,7 @@ setInterval(function(){
     countDown()
 },1000);
 
-var swiper = new Swiper(".product-slider", {
+var swiper = new swiper(".product-slider", {
     slidesPerView: 3,
     loop:true,
     spaceBetween: 10,
@@ -105,7 +105,7 @@ var swiper = new Swiper(".product-slider", {
     },
 });
 
-var swiper = new Swiper(".review-slider", {
+var swiper = new swiper(".review-slider", {
     slidesPerView: 3,
     loop:true,
     spaceBetween: 10,
