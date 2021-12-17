@@ -376,21 +376,21 @@
 
     <section class="contact" id="contact">
 
-        <h1 class="heading">Faça seu cadastro</h1>
+        <h1 class="heading">Fale conosco</h1>
 
         <div class="row">
 
             <form for="form" action="" method="POST">
                 <!-- Nome: -->
                 <input type="text" name="nome" id="nome" placeholder="Digite seu nome" class="box"><br>
-                <!-- Idade: -->
-                <input type="number" name="idade" id="idade" placeholder="Digite sua idade" class="box"><br>
                 <!-- E-mail: -->
                 <input type="email" name="email" id="email" placeholder="Digite seu e-mail" class="box"><br>
+                <!-- Telefone: -->
+                <input type="text" name="telefone" id="telefone" placeholder="Digite seu telefone" class="box"><br>
                 <!-- Mensagem -->
                 <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"
                     class="box"></textarea><br>
-                <input type="submit" value="Cadastrar" class="btn btn-success" onclick="return validar()">
+                <input type="submit" value="Enviar" class="btn btn-success" onclick="return validar()">
             </form>
 
             <div class="image">
@@ -441,16 +441,20 @@
                 <img src="images/payment.png" alt="">
             </div>
         </div>
+        </div>
         <div class="box">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14407.974712486473!2d-49.285572335119625!3d-25.4718865552294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1639482265672!5m2!1spt-BR!2sbr"
                 width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
+        <div class="footer-social-icon">
+            <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+            <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+            <a href="#"><i class="fab fa-instagram instagram-bg"></i></a>
+        </div>
+        <br><br>
         <div class="credit"> Desenvolvido por<span> Indiamara & Angel Gabriele</span> | Projeto Integrador Curso
-            Programador
-            Web - Senac PR</div>
-        <div class="logo-senac">
-            <img src="images/senac-logo-sem-fundo.png" width="10%" height="4%" alt="">
+            Programador Web - SenacPR
         </div>
     </section>
 
@@ -484,27 +488,31 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-
+        // validar formulario
         function validar() {
             nome = document.getElementById("nome").value;
-            idade = document.getElementById("idade").value;
             email = document.getElementById("email").value;
+            telefone = document.getElementById("telefone").value;
             mensagem = document.getElementById("mensagem").value;
-
-            if (nome == "" || nome.lenght < 3) {
+            if (nome == "" || nome.length < 3) {
                 alert("Preencha o campo nome");
                 return false;
-            } else if (idade == "")  {
-                alert("Preencha o campo idade");
-                return false;
-            } else if (email == "") {
+            }
+            if (email == "") {
                 alert("Preencha o campo email");
                 return false;
-            } else if (mensagem == "") {
+            }
+            else if (email.indexOf('@') == -1 || email.indexOf('.') == -1) {
+                alert("Preencha o campo email corretamente");
+                return false;
+            }
+            if (telefone == "") {
+                alert("Preencha o campo telefone");
+                return false;
+            }
+            if (mensagem == "") {
                 alert("Preencha o campo mensagem");
                 return false;
-            } else {
-                return true;
             }
         }
     </script>
