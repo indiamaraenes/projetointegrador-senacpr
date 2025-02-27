@@ -58,7 +58,6 @@ O projeto **BelaFlor** é uma plataforma web dedicada à venda de flores e acess
 - Implementação de um sistema de busca para facilitar a navegação no catálogo de produtos.
 
 ## Créditos
-Este projeto foi desenvolvido como parte de um **Projeto Integrador**, visando integrar conhecimentos de desenvolvimento web.
-
+Este projeto foi desenvolvido como parte do **Projeto Integrador do Curso de Desenvolvimento Web, oferecido pelo Senac-PR**, com o objetivo de integrar os conhecimentos adquiridos ao longo da formação em desenvolvimento web.
 ## Licença
 Este projeto está licenciado sob a licença [MIT](LICENSE).
