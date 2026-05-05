@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #ffffff;
+  --color-foreground: #171717;
+  --color-muted: #f5f5f5;
+  --color-muted-foreground: #737373;
+  --color-primary: #166534;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #f0fdf4;
+  --color-secondary-foreground: #166534;
+  --color-accent: #dc2626;
+  --color-accent-foreground: #ffffff;
+  --color-border: #e5e5e5;
+  --color-input: #e5e5e5;
+  --color-ring: #166534;
+  --color-card: #ffffff;
+  --color-card-foreground: #171717;
+  --radius: 0.5rem;
+  --font-sans: "Source Sans 3", system-ui, sans-serif;
+  --font-display: "Merienda", cursive;
+}
+
+@media (prefers-color-scheme: dark) {
+  @theme inline {
+    --color-background: #0a0a0a;
+    --color-foreground: #ededed;
+    --color-muted: #262626;
+    --color-muted-foreground: #a3a3a3;
+    --color-primary: #22c55e;
+    --color-primary-foreground: #0a0a0a;
+    --color-secondary: #14532d;
+    --color-secondary-foreground: #dcfce7;
+    --color-accent: #ef4444;
+    --color-accent-foreground: #ffffff;
+    --color-border: #262626;
+    --color-input: #262626;
+    --color-ring: #22c55e;
+    --color-card: #171717;
+    --color-card-foreground: #ededed;
+  }
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
